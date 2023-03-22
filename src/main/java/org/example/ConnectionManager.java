@@ -11,7 +11,7 @@ public class ConnectionManager {
     private static final String DB_DRIVER = "org.h2.Driver";
     private static final String DB_URL = "jdbc:h2:mem://localhost/~/jdbc-practice;MODE=MySQL;DB_CLOSE_DELAY=-1";
     public static final int MAX_POOL_SIZE = 40;
-    private static final DataSource ds;
+    private static final DataSource ds;    //커넥션 획득하기 위한 표준 인터페이스
 
     static {
         //각 변수 의미나 동작 방식 공부해 놓으면 좋다.
